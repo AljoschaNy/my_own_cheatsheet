@@ -55,14 +55,35 @@
                             <td class="tagName">Table</td>
                             <td>&lt;table&gt;</td>
                             <td>
-                                Tables are used to arrange data into rows and columns.<br/>
+                                <p>
+                                Tables are used to arrange data into rows (tr) 
+                                and columns.<br/>
+                                To give the table a semantically structure thead, tbody and 
+                                tfoot were introduced.<br />
+                                Whereas thead is used to declare the headings for each column,
+                                tbody is used to fill the cells corresponding to the headings.
+                                In the tfoot you can sum up a column for example.
+                                <br />
+                                </p>
                                 Sample:
                                 <pre>
                                     <code>
                                         &lt;table&gt;
-                                            &lt;tr&gt;
-                                                &lt;td&gt;Cell1&lt;/td&gt;
-                                            &lt;/tr&gt;
+                                            &lt;thead&gt;
+                                                &lt;tr&gt;                               
+                                                    &lt;th scope="col"&gt;Header1&lt;/th&gt;   i. scope tells whether header th is a header for a column or row 
+                                                &lt;/tr&gt;
+                                            &lt;thead&gt;
+                                            &lt;tbody&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;Cell1&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;tbody&gt;
+                                            &lt;tfoot&gt;
+                                                &lt;tr&gt;
+                                                    &lt;td&gt;Sum1&lt;/td&gt;
+                                                &lt;/tr&gt;
+                                            &lt;tfoot&gt;
                                         &lt;/table&gt;
                                     </code>
                                 </pre>
@@ -73,7 +94,7 @@
 
                 </table>
                     
-                </main>              
+                </main>                             
             </section>
             <section id="cssSection">
                 <header class="sectionTitle">

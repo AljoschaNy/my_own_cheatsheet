@@ -5,9 +5,10 @@
         <link href="./css/styles.css" type="text/css" rel="stylesheet" />
         <meta charset="utf-8" />
     </head>
+    
     <body>
-        <header>
-            <h1 id="title">My Own Cheat Sheet</h1>
+        <header id="title">
+            <h1>My Own Cheat Sheet</h1>
             <nav>
                 <ul>
                     <li class="html"><a href="#htmlSection">HTML</a></li>
@@ -17,10 +18,39 @@
             </nav>
         </header>
         <main>
+            <!-- HTML section to descbribe some tags -->
             <section id="htmlSection">
                 <header class="sectionTitle">
                     <h2>HTML</h2>
-                </header>                
+                    <p>HTML description</p>  <!-- generell Infos to be added later-->              
+                </header>  
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <!-- sample row for body
+                        <tr>
+                            <td class="tagName"></td>
+                            <td>&lt;TAG&gt;</td>  -> replace TAG
+                            <td></td>
+                        </tr>
+                    -->
+                    <tbody>
+                        <tr>
+                            <td class="tagName">Table</td>
+                            <td>&lt;table&gt;</td>
+                            <td>Tables are used to arrange data into rows and columns.</td>
+                        </tr>
+                    </tbody>
+
+
+                </table>
+                    
+                </main>              
             </section>
             <section id="cssSection">
                 <header class="sectionTitle">
@@ -34,7 +64,7 @@
             </section>
         </main>
         <footer>
-            <aside>Made by Aljoscha</aside>
+            <p class="creator">Made by Aljoscha</p>
         </footer>
     </body>
 </html>

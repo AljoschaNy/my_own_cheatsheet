@@ -6,6 +6,7 @@ section {
 body {
     font-family: Lucida Console, Courier, monospace;
     color: rgb(32, 32, 32);
+    font-size: 15px;
 }
 
 header h1 {
@@ -22,4 +23,20 @@ h2 {
 
 table {
     border: solid 1px black;
+}
+
+section {
+    color: white;
+}
+
+#htmlSection {
+    background-color: #F2802A;
+}
+
+#cssSection {
+    background-color: #8DABBB;
+}
+
+#javascriptSection {
+    background-color: #EEDB6C;
 }

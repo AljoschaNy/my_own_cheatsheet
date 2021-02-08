@@ -1,4 +1,25 @@
 section {
     min-height: 600px; /* just for visual purpose */
-    background-color: rgb(177, 177, 154); /* just for visual purpose */
+    background-color: rgb(247, 247, 231); /* just for visual purpose */
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: rgb(32, 32, 32);
+}
+
+header h1 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+table {
+    border: solid 1px black;
 }

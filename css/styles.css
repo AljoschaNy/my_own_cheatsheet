@@ -1,20 +1,39 @@
-section {
-    min-height: 600px; /* just for visual purpose */
-    background-color: rgb(247, 247, 231); /* just for visual purpose */
-}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmWUlfBBc4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+  @font-face {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/robotomono/v13/L0xuDF4xlVMF-BfR8bXMIhJHg45mwgGEFl0_3vq_ROW4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
 
+/* Universal Styles*/
 body {
-    font-family: Lucida Console, Courier, monospace;
     color: rgb(32, 32, 32);
     font-size: 15px;
-}
-
-header h1 {
-    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 h1 {
     font-size: 40px;
+    font-weight: 700;
 }
 
 h2 {
@@ -26,17 +45,40 @@ table {
 }
 
 section {
-    color: white;
+    min-height: 600px; /* just for visual purpose */
+    background-color: rgb(247, 247, 231); /* just for visual purpose */
 }
 
+code {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Header */
+header h1 {
+    text-align: center;
+}
+
+#title nav a{
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+}
+
+/* HTML Section */
 #htmlSection {
-    background-color: #F2802A;
+    background-color: rgba(242, 128, 42, 0.7);
 }
 
+/* CSS Section */
 #cssSection {
     background-color: #8DABBB;
 }
 
+/* Javascript Section */
 #javascriptSection {
     background-color: #EEDB6C;
+}
+
+/* Footer */
+footer {
+    text-align: right;
 }

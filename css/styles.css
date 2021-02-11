@@ -29,7 +29,10 @@ body {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    margin: 0;
 }
+
+
 
 h1 {
     font-size: 40px;
@@ -41,12 +44,29 @@ h2 {
 }
 
 table {
-    border: solid 1px black;
+    text-align: left;
+    padding: 10px;
+}
+
+pre {
+    text-align: left;
+}
+
+code {
+    text-align: left;
+    float: left;
 }
 
 section {
     min-height: 600px; /* just for visual purpose */
     background-color: rgb(247, 247, 231); /* just for visual purpose */
+    border-radius: 10px;
+    padding: 5px 40px 40px 40px;
+    margin-bottom: 40px;
+}
+
+section p {
+    margin-bottom: 20px;
 }
 
 code {
@@ -54,8 +74,22 @@ code {
 }
 
 /* Header */
-header h1 {
+header#title {
     text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    margin: 0;
+}
+
+#title nav li{
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-weight: 700;
 }
 
 #title nav a{
@@ -64,21 +98,26 @@ header h1 {
 }
 
 /* HTML Section */
-#htmlSection {
+.html {
     background-color: rgba(242, 128, 42, 0.7);
 }
 
+
 /* CSS Section */
-#cssSection {
+.css {
     background-color: #8DABBB;
 }
 
 /* Javascript Section */
-#javascriptSection {
+.javascript {
     background-color: #EEDB6C;
 }
 
 /* Footer */
 footer {
     text-align: right;
+}
+
+footer p {
+    padding: 20px;
 }
